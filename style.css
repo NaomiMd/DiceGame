@@ -46,3 +46,16 @@ body{
     margin-bottom: 200px;
 }
 
+.active{
+    background-color: rgb(251, 244, 244);
+}
+
+.active::after{
+    content: ".";
+    font-size: 80px;
+    font-weight: 500;
+    color: red;
+    position: relative;
+    bottom: 480px;
+    left: 100px;
+}
