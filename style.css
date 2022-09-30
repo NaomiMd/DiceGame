@@ -47,7 +47,7 @@ body{
 }
 
 .active{
-    background-color: rgb(251, 244, 244);
+    background-color: rgb(243, 243, 243);
 }
 
 .active::after{
@@ -56,7 +56,7 @@ body{
     font-weight: 500;
     color: red;
     position: relative;
-    bottom: 540px;
+    bottom: 545px;
     left: 100px;
 }
 
@@ -116,4 +116,11 @@ svg {
 #btn-hold{
     top: 470px;
     left: 46%;
+}
+
+.Dice{
+    position: relative;
+    right: 3px;
+    bottom: 460px;
+    
 }
