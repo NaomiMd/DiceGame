@@ -25,7 +25,7 @@ roll.addEventListener('click', ()=>{
     const diceImg = "img/"+"dice-"+dice+".png";
     document.querySelectorAll("img")[0].setAttribute('src', diceImg);
 
-    if(dice){
+    if(dice !==1){
         round += dice;
         document.querySelector("#current-" + playerTurn).textContent = round;
     }else{
@@ -44,3 +44,13 @@ hold.addEventListener('click', ()=>{
         otherPlayer();
     }
 });
+
+let otherPlayer = ()=>{
+    playerTurn === 0 ? playerTurn =1 : playerTurn = 0;
+    round = 0;
+    document.getElementById('current-0').textContent = '0';
+    document.getElementById('current-1').textContent = '0';
+    document.querySelector('.box-0').classList.toggle('active');
+    document.querySelector('.box-1').classList.toggle('active');
+
+}
