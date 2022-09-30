@@ -20,29 +20,32 @@ game.addEventListener('click', ()=>{
 });
 // bouton roll //
 roll.addEventListener('click', ()=>{
-
+    if(gameOn){
     const dice = Math.floor(Math.random() * 6) + 1;
     const diceImg = "img/"+"dice-"+dice+".png";
     document.querySelectorAll("img")[0].setAttribute('src', diceImg);
 
     if(dice !==1){
         round += dice;
-        document.querySelector("#current-" + playerTurn).textContent = round;
+        document.querySelector(`#current-${playerTurn}`).textContent = round;
     }else{
         otherPlayer();
     }
+   }
 });
 // bouton hold //
 hold.addEventListener('click', ()=>{
+    if(gameOn){
     score[playerTurn] += round;
-    document.querySelector('#score-' + playerTurn).textContent = score[playerTurn];
+    document.querySelector(`#score-${playerTurn}`).textContent = score[playerTurn];
     if(score[playerTurn] >=100){
-        document.querySelector("#player-" + playerTurn);
+        document.querySelector(`#player-${playerTurn}`);
         alert("La partie est finie");
         gameOn = false;
     }else{
         otherPlayer();
     }
+   }
 });
 
 let otherPlayer = ()=>{
