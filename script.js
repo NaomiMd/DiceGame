@@ -29,7 +29,18 @@ roll.addEventListener('click', ()=>{
         round += dice;
         document.querySelector("#current-" + playerTurn).textContent = round;
     }else{
-        nextPlayer();
+        otherPlayer();
     }
 });
 // bouton hold //
+hold.addEventListener('click', ()=>{
+    score[playerTurn] += round;
+    document.querySelector('#score-' + playerTurn).textContent = score[playerTurn];
+    if(score[playerTurn] >=100){
+        document.querySelector("#player-" + playerTurn);
+        alert("La partie est finie");
+        gameOn = false;
+    }else{
+        otherPlayer();
+    }
+});
