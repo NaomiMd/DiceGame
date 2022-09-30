@@ -8,7 +8,7 @@
 
 body{
     position: relative;
-    height: 100vh;
+    height: 90vh;
     color: black;
 }
 
@@ -26,6 +26,23 @@ body{
 /* box */
 .box-0,
 .box-1{
-    height: 600px;
-    padding: 20px;
+    height: 620px;
+    padding-top: 90px;
+    
 }
+
+/* Joueurs */
+#player-0,
+#player-1{
+    font-size: 40px;
+    font-weight: 100;
+}
+
+#score-0,
+#score-1{
+    font-size: 80px;
+    font-weight: 100;
+    color: red;
+    margin-bottom: 200px;
+}
+
