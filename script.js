@@ -19,5 +19,17 @@ game.addEventListener('click', ()=>{
     document.querySelector('.box-0').classList.add('active');
 });
 // bouton roll //
+roll.addEventListener('click', ()=>{
 
+    const dice = Math.floor(Math.random() * 6) + 1;
+    const diceImg = "img/"+"dice-"+dice+".png";
+    document.querySelectorAll("img")[0].setAttribute('src', diceImg);
+
+    if(dice){
+        round += dice;
+        document.querySelector("#current-" + playerTurn).textContent = round;
+    }else{
+        nextPlayer();
+    }
+});
 // bouton hold //
