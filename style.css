@@ -43,7 +43,7 @@ body{
     font-size: 80px;
     font-weight: 100;
     color: red;
-    margin-bottom: 200px;
+    margin-bottom: 180px;
 }
 
 .active{
@@ -56,6 +56,27 @@ body{
     font-weight: 500;
     color: red;
     position: relative;
-    bottom: 480px;
+    bottom: 540px;
     left: 100px;
+}
+
+.box-current-player{
+    background-color: rgba(255, 0, 0, 0.849);
+    color: white;
+    width: 40%;
+    transform:translate(75%, -20%) ;
+    padding: 30px;
+    text-align: center;
+}
+
+.box-current{
+    font-size: 20px;
+    color: black;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+#current-0,
+#current-1{
+    font-size: 30px;
 }
