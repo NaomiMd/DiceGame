@@ -11,3 +11,21 @@ body{
     height: 100vh;
     color: black;
 }
+
+/* container et col */
+.container{
+    width: 1200px;
+    transform: translate(20px, 150px);
+    background-color: white;
+}
+
+.col-6{
+    width: 50%;
+}
+
+/* box */
+.box-0,
+.box-1{
+    height: 600px;
+    padding: 20px;
+}
